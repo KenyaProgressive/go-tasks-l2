@@ -9,13 +9,15 @@
 
 package main
 
-import "fmt"
+import "fmt" 
 
 func main() {
   a := [5]int{76, 77, 78, 79, 80}
   var b []int = a[1:4]
   fmt.Println(b)
 }
+
+**Запуск решения**: `go run 1/main.go` | `make task1`
 
 # Задание 2
 
@@ -49,3 +51,5 @@ func main() {
   fmt.Println(test())
   fmt.Println(anotherTest())
 }
+
+**Запуск решения**: `go run 2/main.go` | `make task2`
