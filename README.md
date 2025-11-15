@@ -101,3 +101,36 @@ func main() {
 
 
 **Запуск решения**: `go run 4/main.go` | `make task4`
+
+# Задание 5
+
+Что выведет программа?
+
+Объяснить вывод программы.
+
+package main
+
+type customError struct {
+  msg string
+}
+
+func (e *customError) Error() string {
+  return e.msg
+}
+
+func test() *customError {
+  // ... do something
+  return nil
+}
+
+func main() {
+  var err error
+  err = test()
+  if err != nil {
+    println("error")
+    return
+  }
+  println("ok")
+}
+
+**Запуск решения**: `go run 5/main.go` | `make task5`

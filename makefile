@@ -9,3 +9,6 @@ task3:
 
 task4:
 	go run 4/main.go
+
+task5:
+	go run 5/main.go
