@@ -6,3 +6,6 @@ task2:
 
 task3:
 	go run 3/main.go
+
+task4:
+	go run 4/main.go

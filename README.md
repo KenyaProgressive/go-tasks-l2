@@ -79,3 +79,25 @@ func main() {
 }
 
 **Запуск решения**: `go run 3/main.go` | `make task3`
+
+
+# Задание 4
+
+Что выведет программа?
+
+Объяснить вывод программы.
+
+func main() {
+  ch := make(chan int)
+  go func() {
+    for i := 0; i < 10; i++ {
+    ch <- i
+  }
+}()
+  for n := range ch {
+    println(n)
+  }
+}
+
+
+**Запуск решения**: `go run 4/main.go` | `make task4`
