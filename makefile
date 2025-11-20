@@ -15,3 +15,6 @@ task5:
 
 task6:
 	go run 6/main.go
+
+task7:
+	go run 7/main.go
