@@ -18,3 +18,11 @@ task6:
 
 task7:
 	go run 7/main.go
+
+task8:
+	cd task8-ntp && go run . && cd ..
+
+task8-pretty-check:
+	golint task8-ntp/
+	cd task8-ntp && go vet task8-ntp/ && cd ..
+	goimports -d task8-ntp/
