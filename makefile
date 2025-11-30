@@ -26,3 +26,11 @@ task8-pretty-check:
 	golint task8-ntp/
 	cd task8-ntp && go vet task8-ntp/ && cd ..
 	goimports -d task8-ntp/
+
+task9:
+	go run 9/main.go
+
+task9-pretty-check:
+	golint 9/
+	cd 9 && go vet 9/ && cd ..
+	goimports -d 9/
